@@ -282,15 +282,15 @@ export const Placeorder = () => {
               <div className='flex flex-col gap-2 mt-5'>
                 <div onClick={() => setMethod('stripe')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                   <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'stripe' ? 'bg-gray-700' : ''}`}></p>
-                  <img className='h-8' src={'assets/frontend_assets/stripe_logo.png'} alt='Stripe' />
+                  <img className='h-12' src={'assets/frontend_assets/stripe_logo.png'} alt='Stripe' />
                 </div>
                 <div onClick={() => setMethod('razorpay')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                   <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'razorpay' ? 'bg-gray-700' : ''}`}></p>
-                  <img className='h-8' src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZ40xDtGQlNnEtDL2er6ICR1UMWoLcSiU0AML-DkEH616YObjoDhq-o2U_0ncsGtdOqU&usqp=CAU'} alt='razorpay' />
+                  <img className='h-12' src={'https://sellonboard.com/wp-content/uploads/2021/09/razorpay.png'} alt='razorpay' />
                 </div>
                 <div onClick={() => setMethod('cod')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                   <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'cod' ? 'bg-gray-700' : ''}`}></p>
-                  <img className='h-8' src={'assets/frontend_assets/cash_on_delivery.png'} alt='cod' />
+                  <img className='h-12' src={'assets/frontend_assets/cash_on_delivery.png'} alt='cod' />
                 </div>
               </div>
             </div>
