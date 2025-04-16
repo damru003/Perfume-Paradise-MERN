@@ -12,8 +12,13 @@ export const StoreProvider = (props) => {
   const [search, setSearch] = useState('');
   const [showsearch, setshowSearch] = useState(false);
   const [cartItems,setcartItems] = useState({});
-  const backendUrl = "http://localhost:4000";
+  
+  // const backendUrl = "http://localhost:4000";
 
+  // Because .env file is not working that's why i put the backend vercel link here for live view..
+  
+  const backendUrl = "https://perfume-paradise-backend.vercel.app";
+  
   const [products,setProducts] = useState([])
 
   const navigate = useNavigate();
