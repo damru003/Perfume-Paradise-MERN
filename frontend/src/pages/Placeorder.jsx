@@ -286,7 +286,7 @@ export const Placeorder = () => {
                 </div>
                 <div onClick={() => setMethod('razorpay')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                   <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'razorpay' ? 'bg-gray-700' : ''}`}></p>
-                  <img className='h-8' src={'https://upload.wikimedia.org/wikipedia/commons/7/77/Razorpay_logo.png'} alt='razorpay' />
+                  <img className='h-8' src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZ40xDtGQlNnEtDL2er6ICR1UMWoLcSiU0AML-DkEH616YObjoDhq-o2U_0ncsGtdOqU&usqp=CAU'} alt='razorpay' />
                 </div>
                 <div onClick={() => setMethod('cod')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                   <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'cod' ? 'bg-gray-700' : ''}`}></p>
