@@ -20,7 +20,7 @@ export const Search = () => {
 
     
     return showsearch && visible ? (
-        <div className="text-center mt-10">
+        <div className="text-center mt-20">
             <div className="inline-flex items-center justify-center border border-gray-700 px-5 py-2 mx-5 my-3 rounded-full w-3/4">
                 <input 
                     type="text" 
