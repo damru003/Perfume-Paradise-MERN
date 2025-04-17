@@ -56,8 +56,8 @@ const settings = {
       breakpoint: 650,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2
+        slidesToScroll: 1,
+        initialSlide: 1
       }
     },
     {
@@ -76,27 +76,30 @@ export const TopCategory = () => {
 
   return (
     <>
-      <div className='mt-5 md:mt-10 mb-4 container mx-auto'>
-        <div className='font-bold gap-1 text-lg'>
-          <p className='text-center text-2xl md:text-4xl text-slate-700'>Top Category's Brand</p>
-        </div>
+<div className='mt-5 md:mt-10 mb-4 container mx-auto'>
+  <div className='font-bold gap-1 text-lg'>
+    <p className='text-center text-2xl md:text-4xl text-slate-700'>Top Category's Brand</p>
+  </div>
 
-        <div className=''>
-          <div className="slider-container mt-5">
-            <Slider {...settings}>
-              {products.map((item, index) => {
-                return <Link to={'collections'}><div>
-                  <div key={index} className="bg-white border border-gray-200 rounded-lg shadow w-28 h-full md:w-60">
+  <div className=''>
+    <div className="slider-container mt-5">
+      <Slider {...settings}>
+        {products.map((item, index) => (
+          <Link to="/collections" key={index}>
+            <div className="w-32 h-44 md:w-60 md:h-60 bg-white border border-gray-200 rounded-lg shadow flex items-center justify-center overflow-hidden">
+              <img
+                className="object-contain w-full h-full p-2"
+                src={item.images[2]}
+                alt={`Brand ${index}`}
+              />
+            </div>
+          </Link>
+        ))}
+      </Slider>
+    </div>
+  </div>
+</div>
 
-                    <img className="rounded-lg" src={item.images[0]} alt="" />
-                    
-                  </div>
-                </div></Link>
-              })}
-            </Slider>
-          </div>
-        </div>
-      </div>
     </>
   )
 }
