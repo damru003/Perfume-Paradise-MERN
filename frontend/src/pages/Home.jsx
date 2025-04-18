@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { HeroCrousel } from '../components/Hero_carousels/HeroCrousel';
-//import { TopCategory } from '../components/Top_category/TopCategory';
 import { Imagebox1 } from '../components/ImageBox/Imagebox1';
 import { WhyParadise } from '../components/WhyParadise/WhyParadise';
 import { LatestCollection } from '../components/Latestollection/LatestCollection';
@@ -26,7 +25,6 @@ export const Home = () => {
         <BestofPerfume />
         <LatestCollection />
         <ExploreBrand />
-        //<TopCategory />
         <VideoContainer />
         <WhyParadise />
         <DownloadParadise />
