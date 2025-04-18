@@ -25,8 +25,8 @@ export const Home = () => {
         <BestofPerfume />
         <LatestCollection />
         <ExploreBrand />
-        <VideoContainer />
         <WhyParadise />
+        <VideoContainer />
         <DownloadParadise />
         <Footer />
       </div>
